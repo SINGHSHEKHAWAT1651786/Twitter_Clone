@@ -1,0 +1,98 @@
+@import "Variables.scss";
+
+.profile-page {
+    // padding: 20px 20px 0 250px;
+    h2{
+        margin-left: 20px;
+    }
+  .profile-cover {
+    margin-left: 20px;
+    background-color: $twitter-dark;
+    height: 21vh;
+    position: relative;
+    border-radius: 2px;
+
+    .profile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 20px;
+      position: absolute;
+      bottom: -50px;
+      width: 100%;
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        border: 3px solid #fff;
+      }
+
+      .profile-actions {
+        display: flex;
+        gap: 10px;
+
+        .btn {
+          padding: 5px 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .profile-details {
+    padding: 60px 20px 20px;
+
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .profile-handle {
+      color: gray;
+      margin-bottom: 10px;
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 10px;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        svg {
+          color: $twitter-blue;
+        }
+      }
+    }
+
+    .follow-info {
+      display: flex;
+      gap: 20px;
+      font-weight: bold;
+
+      span {
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .profile-tweets {
+    padding: 20px;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .tweet{
+    border: 1px solid $border;
+    margin: 0;
+  }
+}

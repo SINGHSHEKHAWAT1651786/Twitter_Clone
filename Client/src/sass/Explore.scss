@@ -1,0 +1,76 @@
+@import "Variables.scss";
+
+.explore-page {
+    padding-left: 20px;
+  
+  .trending-topics,
+  .popular-tweets,
+  .suggested-accounts {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .trending-topics ul,
+  .suggested-accounts ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        color: $twitter-blue;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .popular-tweets .tweet {
+    margin-bottom: 10px;
+  }
+
+  .suggested-accounts ul {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .account-name {
+        font-weight: bold;
+      }
+
+      .account-handle {
+        color: #657786;
+        margin-left: 5px;
+      }
+
+      .follow-btn {
+        margin-left: auto;
+        padding: 5px 10px;
+        background-color: $twitter-blue;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($twitter-blue, 10%);
+        }
+      }
+    }
+  }
+}

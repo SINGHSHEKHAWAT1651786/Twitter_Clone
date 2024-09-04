@@ -1,0 +1,95 @@
+@import "Variables.scss";
+
+.tweet {
+  margin-left: 0px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .retweet-label {
+    color: #657786;
+  }
+
+  .tweet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .tweet-profile-pic {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .tweet-info {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      .tweet-name {
+        font-weight: bold;
+      }
+
+      .tweet-handle {
+        color: #657786;
+        margin-left: 5px;
+      }
+
+      .tweet-date {
+        color: #657786;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .tweet-content {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .tweet-image {
+    border-radius: 10px;
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+    @media (min-width: 576px) {
+      max-width: 80%;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 60%;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 45%;
+    }
+  }
+
+  .tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+
+    .tweet-icon {
+      cursor: pointer;
+      color: #657786;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: #1da1f2;
+      }
+
+      &.hearted {
+        color: red;
+      }
+
+      &.retweeted {
+        color: green;
+      }
+    }
+  }
+}

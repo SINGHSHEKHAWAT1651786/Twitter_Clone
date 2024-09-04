@@ -1,0 +1,43 @@
+@import "Variables.scss";
+
+.home {
+  // padding: 20px 20px 0 250px;
+
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border;
+
+    h2{
+      margin-left: 10px;
+    }
+  }
+
+  .tweet-image {
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+}
+
+.tweet{
+  border-bottom: 1px solid $border;
+}
+
+.image-preview-container {
+  max-height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .tweet-image-preview {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    margin-top: 10px;
+  }
+}

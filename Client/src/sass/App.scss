@@ -1,0 +1,14 @@
+@import './Sidebar.scss';
+@import './Variables.scss';
+
+.app {
+  display: flex;
+}
+
+.content {
+  margin-left: 250px; /* Same as Sidebar width */
+  padding-top: 20px;
+  margin-right: 20px;
+  border-right: 1px solid $border;
+  width: calc(100% - 250px); /* Same as Sidebar width */
+}
